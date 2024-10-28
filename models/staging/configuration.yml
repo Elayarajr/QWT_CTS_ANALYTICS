@@ -1,11 +1,14 @@
 version: 2
-
 sources:
-  - name: qwt_raw
-    database: qwt_analytics
+  - name: qwt_src
+    database: "{{env_var('DBT_SOURCEDB','QWT_ANALYTICS')}}"
     schema: raw
     tables:
       - name: customers
       - name: products
       - name: orders
-      - name: ordersdetails
+      - name: orderdetails
+      - name: employees
+      - name: offices
+      - name: shipments
+      - name: suppliers
