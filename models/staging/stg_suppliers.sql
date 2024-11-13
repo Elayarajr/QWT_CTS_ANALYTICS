@@ -4,4 +4,4 @@ select *
 
 from 
 
-{{source('qwt_src', 'suppliers')}}
+{{source('qwt_raw', 'suppliers')}}

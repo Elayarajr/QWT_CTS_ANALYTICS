@@ -12,4 +12,4 @@ OFFICECOUNTRY as COUNTRY
 
 from 
 
-{{ source('qwt_src', 'offices')}}
+{{ source('qwt_raw', 'offices')}}

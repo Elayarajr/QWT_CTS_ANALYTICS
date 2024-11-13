@@ -21,6 +21,6 @@ p.UnitCost * od.Quantity as costofgoodssold,
 
 from 
 
-{{ref('stg_orders')}} as o inner join {{ref('stg_orderdetails')}} as od 
+{{ref('stg_orders')}} as o inner join {{ref('stg_ordersdetails')}} as od 
 on o.orderid = od.orderid 
 inner join {{ref('stg_products')}} as p on od.productid = p.productid

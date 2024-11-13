@@ -13,4 +13,4 @@ status
 
 from 
 
-{{ source('qwt_src', 'shipments') }}
+{{ source('qwt_raw', 'shipments') }}
